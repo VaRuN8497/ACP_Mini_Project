@@ -1,0 +1,28 @@
+I started thinking about making a simple graphics editor in C that could
+run in the terminal. I didn’t want anything too advanced, just something
+basic using characters like * and _. The idea was to treat the screen
+like a grid and draw shapes on it.
+
+So first, I thought of using a 2D array to act like a canvas where each
+position holds a character. Then I added a way to print that canvas so I
+could actually see what was happening on the screen.
+
+After that, I worked on adding shapes one by one. I started with a line
+by connecting two points. Then I added rectangles using two corner
+points. Later, I tried making a circle using a center and radius, and
+also added a triangle using three points.
+
+Once drawing was working, I wanted to make it interactive. So I added a
+menu where the user can choose options like adding a shape, deleting a
+shape, modifying it, or just displaying the canvas.
+
+Then I realized I needed to store all the shapes somewhere, so I used
+structures and gave each shape an ID. That made it easier to delete or
+change specific shapes instead of redrawing everything manually.
+
+Finally, I made sure that whenever something changes, the whole canvas
+gets redrawn properly so everything looks clean. I also added a small
+demo scene to check if all shapes are working together correctly.
+
+Overall, I kept the program simple and focused on making it work
+properly in the terminal in an easy-to-understand way.
